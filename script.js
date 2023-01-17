@@ -35,6 +35,21 @@ function ajouter(choix)
     let poid = document.getElementById(choix2).innerText;
     poid = +poid + _poids;
     document.getElementById(choix2).innerText = poid;
+    let prix = document.getElementById(choix3).innerText;
+    prix = +prix + _prix;
+    document.getElementById(choix3).innerText = prix;
+
+    let totalqte = +document.getElementById("qtePommes").innerText +
+        +document.getElementById("qtePoires").innerText +
+        +document.getElementById("qtePrunes").innerText;
+    document.getElementById("qteTotal").innerText = totalqte;
+    let totalpoid = +document.getElementById("poidsPommes").innerText +
+        +document.getElementById("poidsPoires").innerText +
+        +document.getElementById("poidsPrunes").innerText;
+    document.getElementById("poidsTotal").innerText = totalpoid;
+    let totalprix = +document.getElementById("prixPommes").innerText +
+        +document.getElementById("prixPoires").innerText +
+        +document.getElementById("prixPrunes").innerText;
+    document.getElementById("prixTotal").innerText = totalprix;
 }
-// Pour afficher le nombre de pommes dans la facture détaillée
-document.querySelector("#qtePommes").textContent = panier.pommes;
+
