@@ -37,7 +37,7 @@ function ajouter(choix)
     document.getElementById(choix2).innerText = poid;
     let prix = document.getElementById(choix3).innerText;
     prix = +prix + _prix;
-    document.getElementById(choix3).innerText = prix;
+    document.getElementById(choix3).innerText = prix.toFixed(2);
 
     let totalqte = +document.getElementById("qtePommes").innerText +
         +document.getElementById("qtePoires").innerText +
@@ -50,6 +50,6 @@ function ajouter(choix)
     let totalprix = +document.getElementById("prixPommes").innerText +
         +document.getElementById("prixPoires").innerText +
         +document.getElementById("prixPrunes").innerText;
-    document.getElementById("prixTotal").innerText = totalprix;
+    document.getElementById("prixTotal").innerText = totalprix.toFixed(2);
 }
 
