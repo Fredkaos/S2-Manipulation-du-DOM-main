@@ -11,7 +11,7 @@ function ajouter(choix)
         choix2 = "poidsPommes";
         _poids = 10;
         choix3 = "prixPommes";
-        _prix = 13.50;
+        _prix = parseFloat(document.getElementById("tarifpommes").innerText);
     }
     else if (choix === 'poires')
     {
@@ -19,7 +19,7 @@ function ajouter(choix)
         choix2 = "poidsPoires";
         _poids = 12;
         choix3 = "prixPoires";
-        _prix = 20.00;
+        _prix = parseFloat(document.getElementById("tarifpoires").innerText);
     }
     else
     {
@@ -27,7 +27,7 @@ function ajouter(choix)
         choix2 = "poidsPrunes";
         _poids = 15;
         choix3 = "prixPrunes";
-        _prix = 22.00;
+        _prix = parseFloat(document.getElementById("tarifprunes").innerText);
     }
     let qte = document.getElementById(choix1).innerText;
     qte = +qte + 1;
